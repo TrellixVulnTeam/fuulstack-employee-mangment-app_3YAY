@@ -1,8 +1,7 @@
-package Crud.com.CRUD.Back.Controller;
+package Crud.com.CRUD.Back.Controllers;
 
 import Crud.com.CRUD.Back.exception.ResourceNotFoundException;
-import Crud.com.CRUD.Back.model.employee;
-import Crud.com.CRUD.Back.repository.employeeRepository;
+import Crud.com.CRUD.Back.entites.employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,11 +12,11 @@ import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping("/api/")
 public class employeeController {
 
     @Autowired
-    private Crud.com.CRUD.Back.repository.employeeRepository EmployeeRepository;
+    private Crud.com.CRUD.Back.repositories.employeeRepository EmployeeRepository;
 
     // get all employees
     @GetMapping("/employees")

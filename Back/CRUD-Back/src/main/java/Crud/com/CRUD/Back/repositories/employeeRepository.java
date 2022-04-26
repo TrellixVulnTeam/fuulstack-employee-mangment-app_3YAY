@@ -1,6 +1,6 @@
-package Crud.com.CRUD.Back.repository;
+package Crud.com.CRUD.Back.repositories;
 
-import Crud.com.CRUD.Back.model.employee;
+import Crud.com.CRUD.Back.entites.employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import org.springframework.stereotype.Repository;

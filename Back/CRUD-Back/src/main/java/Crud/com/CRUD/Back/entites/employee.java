@@ -1,4 +1,4 @@
-package Crud.com.CRUD.Back.model;
+package Crud.com.CRUD.Back.entites;
 
 import lombok.Data;
 
